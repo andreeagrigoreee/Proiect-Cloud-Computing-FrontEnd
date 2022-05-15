@@ -1,10 +1,23 @@
-import React from "react";
+import React from 'react';
 
-function MainPage(){
+import Header from './Header';
+import MessagesList from './MessagesList';
+import MessagesSubmit from './MessagesSubmit';
+
+function MainPage() {
     return (
-      <div id="MainPage">
-            <h1 className= 'mt-10 text-blue-600 text-3xl font-bold'>MainPage </h1>
+        <div id="MainPage">
+            <Header title={"Translation App"} />
+                <div className="flex max-w-7xl m-auto px-14 py-24">
+                    <div className='w-1/2 pr-5'>
+                        <MessagesList />
+                    </div>
+                    <div className='w-1/2 pl-5'>
+                        <MessagesSubmit />
+                    </div>
+                </div>
         </div>
     );
 }
+
 export default MainPage;
