@@ -5,15 +5,6 @@ import axios from 'axios';
 
 
 
-/* const messages = [
-     {
-         entryID: 1,
-         senderName: 'Deu',
-         receiverMail: 'Deu@mail.com',
-         messageContent: 'Hello, how are you?',
-    },
- ];
- */
 function MessagesList() {
     const [messages, setMessages] = useState([]);
 
@@ -45,7 +36,7 @@ function MessagesList() {
                             ) : null}
                             <div className="relative flex space-x-3">
                                 <span
-                                    className={'h-8 w-8 rounded-full flex items-center justify-center ring-8 ring-white bg-blue-500'}>
+                                    className={'h-8 w-8 rounded-full flex items-center justify-center ring-8 ring-white bg-purple-500'}>
                                     <UserIcon className="h-5 w-5 text-white" aria-hidden="true" />
                                 </span>
                                 <div className="min-w-0 flex-1 pt-1.5 flex justify-between space-x-4">
